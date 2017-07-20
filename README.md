@@ -1,15 +1,9 @@
 # 6/29 ChatBot HW2
 
-## Code file： https://drive.google.com/file/d/0B24mgsUj2usnbHVxUV9JcC1OQTg/view
-
-## Result Photo Example : 
+## Result Photo Example :
 ![](https://i.imgur.com/TOgLxih.png)
 
-
-
 ## Code
-
-
 
 ```python=
 #!/usr/bin/python
