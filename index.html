@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CKIP system</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background: #c97f27;
+        }
+        #typing{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+        }
+        #input{
+            resize: none;
+            font-size: 15px;
+        }
+        #parse{
+            border: 0px;
+            background-color: steelblue;
+            height: 40px;
+            width : 100px;
+            font-size: 30px;
+        }
+        #result{
+            width:80%;
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        tr, td{
+            border: 3px solid black;
+        }
+        #title{
+            font-size: 50px;
+            color: #7c1fd9;
+        }
+    </style>
+</head>
+<body>
+
+    <div id = "typing">
+        <div id = "title">CKIP Parsing System</div>
+        <textarea id = "input" rows="6" cols="50" placeholder = "Please input sentence to do parsing(Chinese only)"></textarea><br>
+        <form>
+            <input type = "button" value = "Parse" id = "parse" onclick="parsing()">
+        </form><br>
+        <table id = "result" align="center">
+            <tr>
+                <td colspan = "2">CKIP斷詞結果 CKIP Word Segmentation Result</td>
+            </tr>
+            <tr>
+                <td>人名識別 Person Name List</td>
+                <td id = "person"></td>
+            </tr>
+            <tr>
+                <td>時間識別 Time List</td>
+                <td id = "time"></td>
+            </tr>
+            <tr>
+                <td>地名識別 Location List</td>
+                <td id = "location"></td>
+            </tr>
+            <tr>
+                <td>物件識別 Object List</td>
+                <td id = "object"></td>
+            </tr>
+            <tr>
+                <td>完整事件 Complete Event List</td>
+                <td id = "complete"></td>
+            </tr>
+            <tr>
+                <td>精簡事件 Simple Event List</td>
+                <td id = "simple"></td>
+            </tr>
+        </table>
+    <div>
+    <script>
+        function parsing(){
+            document.getElementById('person').innerHTML = "87";
+            document.getElementById('time').innerHTML = "87";
+            document.getElementById('location').innerHTML = "87";
+            document.getElementById('object').innerHTML = "87";
+            document.getElementById('complete').innerHTML = "87";
+            document.getElementById('simple').innerHTML = "87";
+        }
+    </script>
+</body>
+</html>
